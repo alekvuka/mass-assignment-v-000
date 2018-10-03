@@ -7,9 +7,6 @@ class Person
     obj_attr.each do |key, value|
       self.send(("#{key}="), value)
     end 
-
   end
-
-
 
 end
