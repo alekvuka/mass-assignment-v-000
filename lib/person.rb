@@ -6,7 +6,7 @@ class Person
   def initialize(obj_attr)
     obj_attr.each do |key, value|
       self.send(("#{key}="), value)
-    end 
+    end
   end
 
 end
