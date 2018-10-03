@@ -4,6 +4,11 @@ class Person
   attr_accessor :complexion, :t_shirt_size, :wrist_size, :glove_size, :pant_length, :pant_width
 
   def initialize(obj_attr)
+    obj_attr.each do |key, value|
+      self.send(("#{key}="), value)
+    end 
+
+  end
 
 
 
